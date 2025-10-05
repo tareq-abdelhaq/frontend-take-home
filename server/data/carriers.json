@@ -1,0 +1,30 @@
+[
+  {
+    "id": 7284,
+    "label": "FedEx"
+  },
+  {
+    "id": 2931,
+    "label": "UPS"
+  },
+  {
+    "id": 6507,
+    "label": "DHL"
+  },
+  {
+    "id": 4163,
+    "label": "USPS"
+  },
+  {
+    "id": 9845,
+    "label": "J.B. Hunt"
+  },
+  {
+    "id": 1592,
+    "label": "Schneider"
+  },
+  {
+    "id": 8736,
+    "label": "Swift Transportation"
+  }
+]

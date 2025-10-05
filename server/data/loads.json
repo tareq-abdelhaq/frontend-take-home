@@ -1,0 +1,502 @@
+[
+  {
+    "id": "LD001",
+    "origin": "Los Angeles, CA",
+    "destination": "Phoenix, AZ",
+    "status": 8261,
+    "date": "2025-09-15",
+    "weight": 15000,
+    "carrier": 7284,
+    "price": 1250.00
+  },
+  {
+    "id": "LD002",
+    "origin": "Chicago, IL",
+    "destination": "Detroit, MI",
+    "status": 5943,
+    "date": "2025-09-20",
+    "weight": 22000,
+    "carrier": 2931,
+    "price": 1800.00
+  },
+  {
+    "id": "LD003",
+    "origin": "Houston, TX",
+    "destination": "Dallas, TX",
+    "status": 1827,
+    "date": "2025-09-25",
+    "weight": 18000,
+    "carrier": 6507,
+    "price": 950.00
+  },
+  {
+    "id": "LD004",
+    "origin": "Miami, FL",
+    "destination": "Atlanta, GA",
+    "status": 8261,
+    "date": "2025-09-10",
+    "weight": 12000,
+    "carrier": 4163,
+    "price": 1100.00
+  },
+  {
+    "id": "LD005",
+    "origin": "Seattle, WA",
+    "destination": "Portland, OR",
+    "status": 5943,
+    "date": "2025-09-22",
+    "weight": 20000,
+    "carrier": 9845,
+    "price": 1500.00
+  },
+  {
+    "id": "LD006",
+    "origin": "New York, NY",
+    "destination": "Boston, MA",
+    "status": 8261,
+    "date": "2025-09-12",
+    "weight": 16000,
+    "carrier": 1592,
+    "price": 1350.00
+  },
+  {
+    "id": "LD007",
+    "origin": "Denver, CO",
+    "destination": "Salt Lake City, UT",
+    "status": 1827,
+    "date": "2025-09-28",
+    "weight": 14000,
+    "carrier": 8736,
+    "price": 1200.00
+  },
+  {
+    "id": "LD008",
+    "origin": "San Francisco, CA",
+    "destination": "Las Vegas, NV",
+    "status": 5943,
+    "date": "2025-09-21",
+    "weight": 19000,
+    "carrier": 7284,
+    "price": 1650.00
+  },
+  {
+    "id": "LD009",
+    "origin": "Philadelphia, PA",
+    "destination": "Washington, DC",
+    "status": 8261,
+    "date": "2025-09-14",
+    "weight": 13000,
+    "carrier": 2931,
+    "price": 1050.00
+  },
+  {
+    "id": "LD010",
+    "origin": "Phoenix, AZ",
+    "destination": "Albuquerque, NM",
+    "status": 3405,
+    "date": "2025-09-18",
+    "weight": 17000,
+    "carrier": 6507,
+    "price": 1400.00
+  },
+  {
+    "id": "LD011",
+    "origin": "Charlotte, NC",
+    "destination": "Nashville, TN",
+    "status": 5943,
+    "date": "2025-09-23",
+    "weight": 21000,
+    "carrier": 4163,
+    "price": 1700.00
+  },
+  {
+    "id": "LD012",
+    "origin": "San Diego, CA",
+    "destination": "Tucson, AZ",
+    "status": 1827,
+    "date": "2025-09-26",
+    "weight": 15500,
+    "carrier": 9845,
+    "price": 1300.00
+  },
+  {
+    "id": "LD013",
+    "origin": "Austin, TX",
+    "destination": "San Antonio, TX",
+    "status": 8261,
+    "date": "2025-09-11",
+    "weight": 11000,
+    "carrier": 1592,
+    "price": 850.00
+  },
+  {
+    "id": "LD014",
+    "origin": "Indianapolis, IN",
+    "destination": "Columbus, OH",
+    "status": 5943,
+    "date": "2025-09-24",
+    "weight": 23000,
+    "carrier": 8736,
+    "price": 1900.00
+  },
+  {
+    "id": "LD015",
+    "origin": "Jacksonville, FL",
+    "destination": "Tampa, FL",
+    "status": 8261,
+    "date": "2025-09-13",
+    "weight": 14500,
+    "carrier": 7284,
+    "price": 1150.00
+  },
+  {
+    "id": "LD016",
+    "origin": "San Jose, CA",
+    "destination": "Sacramento, CA",
+    "status": 1827,
+    "date": "2025-09-27",
+    "weight": 16500,
+    "carrier": 2931,
+    "price": 1250.00
+  },
+  {
+    "id": "LD017",
+    "origin": "Memphis, TN",
+    "destination": "Little Rock, AR",
+    "status": 5943,
+    "date": "2025-09-22",
+    "weight": 18500,
+    "carrier": 6507,
+    "price": 1550.00
+  },
+  {
+    "id": "LD018",
+    "origin": "Baltimore, MD",
+    "destination": "Richmond, VA",
+    "status": 8261,
+    "date": "2025-09-16",
+    "weight": 12500,
+    "carrier": 4163,
+    "price": 1000.00
+  },
+  {
+    "id": "LD019",
+    "origin": "Milwaukee, WI",
+    "destination": "Madison, WI",
+    "status": 3405,
+    "date": "2025-09-19",
+    "weight": 13500,
+    "carrier": 9845,
+    "price": 900.00
+  },
+  {
+    "id": "LD020",
+    "origin": "Portland, OR",
+    "destination": "Eugene, OR",
+    "status": 5943,
+    "date": "2025-09-23",
+    "weight": 17500,
+    "carrier": 1592,
+    "price": 1450.00
+  },
+  {
+    "id": "LD021",
+    "origin": "Oklahoma City, OK",
+    "destination": "Tulsa, OK",
+    "status": 1827,
+    "date": "2025-09-29",
+    "weight": 19500,
+    "carrier": 8736,
+    "price": 1600.00
+  },
+  {
+    "id": "LD022",
+    "origin": "Las Vegas, NV",
+    "destination": "Reno, NV",
+    "status": 8261,
+    "date": "2025-09-17",
+    "weight": 14000,
+    "carrier": 7284,
+    "price": 1100.00
+  },
+  {
+    "id": "LD023",
+    "origin": "Louisville, KY",
+    "destination": "Lexington, KY",
+    "status": 5943,
+    "date": "2025-09-24",
+    "weight": 20500,
+    "carrier": 2931,
+    "price": 1750.00
+  },
+  {
+    "id": "LD024",
+    "origin": "Tucson, AZ",
+    "destination": "El Paso, TX",
+    "status": 1827,
+    "date": "2025-09-30",
+    "weight": 22500,
+    "carrier": 6507,
+    "price": 1850.00
+  },
+  {
+    "id": "LD025",
+    "origin": "Fresno, CA",
+    "destination": "Bakersfield, CA",
+    "status": 8261,
+    "date": "2025-09-15",
+    "weight": 11500,
+    "carrier": 4163,
+    "price": 950.00
+  },
+  {
+    "id": "LD026",
+    "origin": "Mesa, AZ",
+    "destination": "Flagstaff, AZ",
+    "status": 3405,
+    "date": "2025-09-20",
+    "weight": 15000,
+    "carrier": 9845,
+    "price": 1200.00
+  },
+  {
+    "id": "LD027",
+    "origin": "Atlanta, GA",
+    "destination": "Savannah, GA",
+    "status": 5943,
+    "date": "2025-09-25",
+    "weight": 18000,
+    "carrier": 1592,
+    "price": 1500.00
+  },
+  {
+    "id": "LD028",
+    "origin": "Kansas City, MO",
+    "destination": "St. Louis, MO",
+    "status": 1827,
+    "date": "2025-10-01",
+    "weight": 21500,
+    "carrier": 8736,
+    "price": 1800.00
+  },
+  {
+    "id": "LD029",
+    "origin": "Colorado Springs, CO",
+    "destination": "Pueblo, CO",
+    "status": 8261,
+    "date": "2025-09-18",
+    "weight": 13000,
+    "carrier": 7284,
+    "price": 1050.00
+  },
+  {
+    "id": "LD030",
+    "origin": "Raleigh, NC",
+    "destination": "Greensboro, NC",
+    "status": 5943,
+    "date": "2025-09-26",
+    "weight": 16000,
+    "carrier": 2931,
+    "price": 1350.00
+  },
+  {
+    "id": "LD031",
+    "origin": "Omaha, NE",
+    "destination": "Lincoln, NE",
+    "status": 1827,
+    "date": "2025-10-02",
+    "weight": 17000,
+    "carrier": 6507,
+    "price": 1400.00
+  },
+  {
+    "id": "LD032",
+    "origin": "Long Beach, CA",
+    "destination": "Anaheim, CA",
+    "status": 8261,
+    "date": "2025-09-19",
+    "weight": 12000,
+    "carrier": 4163,
+    "price": 1000.00
+  },
+  {
+    "id": "LD033",
+    "origin": "Virginia Beach, VA",
+    "destination": "Norfolk, VA",
+    "status": 5943,
+    "date": "2025-09-27",
+    "weight": 14500,
+    "carrier": 9845,
+    "price": 1200.00
+  },
+  {
+    "id": "LD034",
+    "origin": "Oakland, CA",
+    "destination": "Stockton, CA",
+    "status": 3405,
+    "date": "2025-09-21",
+    "weight": 19000,
+    "carrier": 1592,
+    "price": 1600.00
+  },
+  {
+    "id": "LD035",
+    "origin": "Minneapolis, MN",
+    "destination": "St. Paul, MN",
+    "status": 8261,
+    "date": "2025-09-20",
+    "weight": 10000,
+    "carrier": 8736,
+    "price": 850.00
+  },
+  {
+    "id": "LD036",
+    "origin": "Tulsa, OK",
+    "destination": "Wichita, KS",
+    "status": 5943,
+    "date": "2025-09-28",
+    "weight": 20000,
+    "carrier": 7284,
+    "price": 1700.00
+  },
+  {
+    "id": "LD037",
+    "origin": "Arlington, TX",
+    "destination": "Fort Worth, TX",
+    "status": 1827,
+    "date": "2025-10-03",
+    "weight": 15500,
+    "carrier": 2931,
+    "price": 1300.00
+  },
+  {
+    "id": "LD038",
+    "origin": "New Orleans, LA",
+    "destination": "Baton Rouge, LA",
+    "status": 8261,
+    "date": "2025-09-22",
+    "weight": 13500,
+    "carrier": 6507,
+    "price": 1100.00
+  },
+  {
+    "id": "LD039",
+    "origin": "Bakersfield, CA",
+    "destination": "Visalia, CA",
+    "status": 5943,
+    "date": "2025-09-29",
+    "weight": 16500,
+    "carrier": 4163,
+    "price": 1400.00
+  },
+  {
+    "id": "LD040",
+    "origin": "Tampa, FL",
+    "destination": "Orlando, FL",
+    "status": 1827,
+    "date": "2025-10-04",
+    "weight": 18500,
+    "carrier": 9845,
+    "price": 1550.00
+  },
+  {
+    "id": "LD041",
+    "origin": "Aurora, CO",
+    "destination": "Fort Collins, CO",
+    "status": 8261,
+    "date": "2025-09-23",
+    "weight": 14000,
+    "carrier": 1592,
+    "price": 1150.00
+  },
+  {
+    "id": "LD042",
+    "origin": "Anaheim, CA",
+    "destination": "Irvine, CA",
+    "status": 3405,
+    "date": "2025-09-24",
+    "weight": 11000,
+    "carrier": 8736,
+    "price": 900.00
+  },
+  {
+    "id": "LD043",
+    "origin": "Honolulu, HI",
+    "destination": "Hilo, HI",
+    "status": 5943,
+    "date": "2025-09-30",
+    "weight": 25000,
+    "carrier": 7284,
+    "price": 2200.00
+  },
+  {
+    "id": "LD044",
+    "origin": "Santa Ana, CA",
+    "destination": "Riverside, CA",
+    "status": 1827,
+    "date": "2025-10-05",
+    "weight": 17500,
+    "carrier": 2931,
+    "price": 1450.00
+  },
+  {
+    "id": "LD045",
+    "origin": "Corpus Christi, TX",
+    "destination": "Laredo, TX",
+    "status": 8261,
+    "date": "2025-09-25",
+    "weight": 19500,
+    "carrier": 6507,
+    "price": 1650.00
+  },
+  {
+    "id": "LD046",
+    "origin": "Pittsburgh, PA",
+    "destination": "Erie, PA",
+    "status": 5943,
+    "date": "2025-10-01",
+    "weight": 21000,
+    "carrier": 4163,
+    "price": 1750.00
+  },
+  {
+    "id": "LD047",
+    "origin": "Riverside, CA",
+    "destination": "San Bernardino, CA",
+    "status": 1827,
+    "date": "2025-10-06",
+    "weight": 12500,
+    "carrier": 9845,
+    "price": 1050.00
+  },
+  {
+    "id": "LD048",
+    "origin": "Lexington, KY",
+    "destination": "Bowling Green, KY",
+    "status": 8261,
+    "date": "2025-09-26",
+    "weight": 14500,
+    "carrier": 1592,
+    "price": 1200.00
+  },
+  {
+    "id": "LD049",
+    "origin": "Stockton, CA",
+    "destination": "Modesto, CA",
+    "status": 5943,
+    "date": "2025-10-02",
+    "weight": 16000,
+    "carrier": 8736,
+    "price": 1350.00
+  },
+  {
+    "id": "LD050",
+    "origin": "St. Paul, MN",
+    "destination": "Duluth, MN",
+    "status": 1827,
+    "date": "2025-10-07",
+    "weight": 23000,
+    "carrier": 7284,
+    "price": 1900.00
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1827,
+    "label": "Pending"
+  },
+  {
+    "id": 5943,
+    "label": "In Transit"
+  },
+  {
+    "id": 8261,
+    "label": "Delivered"
+  },
+  {
+    "id": 3405,
+    "label": "Cancelled"
+  }
+]

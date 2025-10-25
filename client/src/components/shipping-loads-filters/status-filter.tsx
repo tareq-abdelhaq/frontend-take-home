@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import toast from 'react-hot-toast';
+
 import { useStatusesQuery } from '@services/queries';
 
 interface StatusFilterProps {
@@ -6,7 +9,7 @@ interface StatusFilterProps {
 }
 
 export default function StatusFilter({ value, onChange }: StatusFilterProps) {
-    const { data } = useStatusesQuery();
+    const { data, error } = useStatusesQuery();
 
     const statusList = data || [];
 
@@ -18,6 +21,13 @@ export default function StatusFilter({ value, onChange }: StatusFilterProps) {
 
         onChange(Number(e.target.value));
     };
+
+    // Show error toast when API fails
+    useEffect(() => {
+        if (error) {
+            toast.error(`Failed to load statuses: ${error}`);
+        }
+    }, [error]);
 
     return (
         <div>

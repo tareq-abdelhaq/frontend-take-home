@@ -19,7 +19,6 @@ interface TableProps {
 }
 
 // Todo: use a proper key for table rows specially if there are actions like edit, delete, etc.
-// Todo: add a tooltip to the table cells if the text is too long and truncate it
 
 export default function Table(props: TableProps) {
     const { data, columns, isLoading, empty } = props;

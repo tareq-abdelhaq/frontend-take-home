@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import toast from 'react-hot-toast';
+
 import { useCarriersQuery } from '@services/queries';
 
 interface CarrierFilterProps {
@@ -6,7 +9,7 @@ interface CarrierFilterProps {
 }
 
 export default function CarrierFilter({ value, onChange }: CarrierFilterProps) {
-    const { data } = useCarriersQuery();
+    const { data, error } = useCarriersQuery();
     const carrierList = data || [];
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -17,6 +20,13 @@ export default function CarrierFilter({ value, onChange }: CarrierFilterProps) {
 
         onChange(Number(e.target.value));
     };
+
+    // Show error toast when API fails
+    useEffect(() => {
+        if (error) {
+            toast.error(`Failed to load carriers: ${error}`);
+        }
+    }, [error]);
 
     return (
         <div>

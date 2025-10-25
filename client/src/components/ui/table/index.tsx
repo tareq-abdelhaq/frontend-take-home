@@ -5,6 +5,7 @@ export interface TableColumn {
     key: string;
     label: string;
     accessor: string;
+    render?: (value: any) => any;
 }
 
 interface TableProps {
@@ -48,7 +49,7 @@ export default function Table(props: TableProps) {
                             <tr key={index} className="hover:bg-gray-50 transition-colors duration-150">
                                 {columns.map((column) => (
                                     <td key={column.key} className="px-6 py-4 text-sm text-gray-900">
-                                        {item[column.accessor]}
+                                        {column.render ? column.render(item[column.accessor]) : item[column.accessor]}
                                     </td>
                                 ))}
                             </tr>

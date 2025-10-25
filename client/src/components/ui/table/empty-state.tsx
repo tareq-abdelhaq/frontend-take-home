@@ -11,17 +11,9 @@ export default function EmptyState({
 }: EmptyStateProps) {
     return (
         <tr>
-            <td
-                colSpan={colSpan}
-                className="px-4 py-8 text-center text-gray-500"
-            >
+            <td colSpan={colSpan} className="px-4 py-8 text-center text-gray-500">
                 <div className="flex flex-col items-center justify-center gap-2">
-                    <svg
-                        className="h-12 w-12 text-gray-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
+                    <svg className="h-12 w-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
                             strokeLinecap="round"
                             strokeLinejoin="round"

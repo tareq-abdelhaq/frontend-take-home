@@ -2,12 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 import axios from 'axios';
 
-import type {
-    GetLoadsReqParams,
-    GetLoadsRes,
-    GetStatusesRes,
-    GetCarriersRes,
-} from './types';
+import type { GetLoadsReqParams, GetLoadsRes, GetStatusesRes, GetCarriersRes } from './types';
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
@@ -26,9 +21,7 @@ export const useLoadsQuery = (params?: GetLoadsReqParams) => {
             });
             setData(res.data);
         } catch (err) {
-            setError(
-                err instanceof Error ? err.message : 'An unknown error occurred'
-            );
+            setError(err instanceof Error ? err.message : 'An unknown error occurred');
         } finally {
             setIsLoading(false);
         }
@@ -51,14 +44,10 @@ export const useStatusesQuery = () => {
         setError(null);
 
         try {
-            const res = await axios.get<GetStatusesRes>(
-                `${BASE_URL}/api/statuses`
-            );
+            const res = await axios.get<GetStatusesRes>(`${BASE_URL}/api/statuses`);
             setData(res.data);
         } catch (err) {
-            setError(
-                err instanceof Error ? err.message : 'An unknown error occurred'
-            );
+            setError(err instanceof Error ? err.message : 'An unknown error occurred');
         } finally {
             setIsLoading(false);
         }
@@ -81,14 +70,10 @@ export const useCarriersQuery = () => {
         setError(null);
 
         try {
-            const res = await axios.get<GetCarriersRes>(
-                `${BASE_URL}/api/carriers`
-            );
+            const res = await axios.get<GetCarriersRes>(`${BASE_URL}/api/carriers`);
             setData(res.data);
         } catch (err) {
-            setError(
-                err instanceof Error ? err.message : 'An unknown error occurred'
-            );
+            setError(err instanceof Error ? err.message : 'An unknown error occurred');
         } finally {
             setIsLoading(false);
         }

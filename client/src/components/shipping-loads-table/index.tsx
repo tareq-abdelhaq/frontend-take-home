@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 
 import Table from '@components/ui/table';
 import Pagination from '@components/ui/pagination';
@@ -6,18 +6,29 @@ import Pagination from '@components/ui/pagination';
 import { useLoadsQuery } from '@services/queries';
 import { useColumns } from './hooks/use-columns';
 
+import type { GetLoadsReqParams } from '@services/types';
+import type { FilterState } from '@components/shipping-loads-filters';
+
 // Todo: Add toast error if something goes wrong while fetching loads
 // Todo: Fix flickering when loading data
+// Todo: Fix pagination resetting when filters change "currently works but it fires 2 requests"
 
-export default function ShippingLoadsTable() {
+interface ShippingLoadsTableProps {
+    filters?: FilterState;
+}
+
+export default function ShippingLoadsTable({ filters }: ShippingLoadsTableProps) {
     const [currentPage, setCurrentPage] = useState(1);
 
-    const queryParams = useMemo(
+    const queryParams: GetLoadsReqParams = useMemo(
         () => ({
             page: currentPage,
             limit: 10,
+            search: filters?.search || undefined,
+            status: filters?.status || undefined,
+            carrier: filters?.carrier || undefined,
         }),
-        [currentPage]
+        [currentPage, filters]
     );
 
     const { data, isLoading } = useLoadsQuery(queryParams);
@@ -37,6 +48,11 @@ export default function ShippingLoadsTable() {
             setCurrentPage(currentPage + 1);
         }
     };
+
+    // Reset pagination when filters change
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [filters?.search, filters?.status, filters?.carrier]);
 
     return (
         <div className="flex flex-col gap-4">

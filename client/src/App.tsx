@@ -1,15 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 
 import ShippingLoadsTable from '@components/shipping-loads-table';
 import ShippingLoadsFilters, { type FilterState } from '@components/shipping-loads-filters';
 
 function App() {
-    const [filters, setFilters] = useState<FilterState>({
-        search: '',
-        status: null,
-        carrier: null,
-    });
+    // Initialize filters from URL or fallback to defaults
+    const getInitialFilters = (): FilterState => {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            search: params.get('search') || '',
+            status: params.get('status') ? Number(params.get('status')) : null,
+            carrier: params.get('carrier') ? Number(params.get('carrier')) : null,
+        };
+    };
+
+    const [filters, setFilters] = useState<FilterState>(getInitialFilters);
+
+    // Update URL when filters change to persist the filters in the URL
+    useEffect(() => {
+        const params = new URLSearchParams();
+
+        if (filters.search) params.set('search', filters.search);
+        if (filters.status) params.set('status', filters.status.toString());
+        if (filters.carrier) params.set('carrier', filters.carrier.toString());
+
+        const newUrl = params.toString() ? `?${params.toString()}` : window.location.pathname;
+        window.history.replaceState({}, '', newUrl);
+    }, [filters]);
 
     const handleFiltersChange = (newFilters: FilterState) => {
         setFilters(newFilters);
